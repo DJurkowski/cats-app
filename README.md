@@ -8,6 +8,7 @@ To install the project dependencies, run the following command:
 
 ```bash
 npm install
+```
 
 ## Usage
 
