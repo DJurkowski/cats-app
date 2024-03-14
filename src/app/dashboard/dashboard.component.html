@@ -1,0 +1,18 @@
+<div class="dashboard">
+  <button class="dashboard__button--logout" mat-flat-button color="primary" type="submit" (click)="logout()">Logout</button>
+
+  <div class="dashboard__header">Cats Facts</div>
+
+  @if (catFacts.length !== 0) {
+    <div class="dashboard__content" infinite-scroll [infiniteScrollDistance]="distance" (scrolled)="onScroll()">
+      @for (catFact of catFacts; track catFact) {
+        <mat-card class="dashboard__card">
+          <mat-card-content>{{ catFact }}</mat-card-content>
+        </mat-card>
+      }
+    </div>
+  }
+  @if (loading$ | async) {
+    <mat-spinner class="dashboard__spinner" strokeWidth="10"></mat-spinner>
+  }
+</div>
