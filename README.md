@@ -6,9 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Required Angualr version 17 and Node.js version 20
 To install the project dependencies, run the following command:
 
-```bash
-npm install
-```
+`npm install`
 
 ## Usage
 
